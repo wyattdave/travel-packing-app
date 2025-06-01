@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packing List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="../icon 256.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../icon.png" alt="Travel List Logo" class="logo">
+            <h1>Travel Packing List</h1>
+            <button id="install-button" style="display: none;">Install App</button>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="item" placeholder="Item">
+            <input type="text" id="category" list="category-list" placeholder="Category">
+            <datalist id="category-list"></datalist>
+            <input type="text" id="who" list="who-list" placeholder="For Who">
+            <datalist id="who-list"></datalist>
+            <button id="add-button">Add Item</button>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-row">
+                <select id="filter-item" class="filter-select">
+                    <option value="">All Items</option>
+                </select>
+                <select id="filter-category" class="filter-select">
+                    <option value="">All Categories</option>
+                </select>
+                <select id="filter-who" class="filter-select">
+                    <option value="">All People</option>
+                </select>
+                <select id="filter-packed" class="filter-select">
+                    <option value="">All Items</option>
+                    <option value="packed">Packed</option>
+                    <option value="unpacked">Unpacked</option>
+                </select>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>For Who</th>
+                    <th>Packed</th>
+                    <th>Actions</th>  <!-- Add this new column -->
+                </tr>
+            </thead>
+            <tbody id="item-list">
+            </tbody>
+        </table>
+
+        <div class="export-import">
+            <input type="file" id="import-file" style="display: none">
+        </div>
+
+        <div class="settings-container">
+            <button id="settings-button" class="settings-cog">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+            </button>
+            <div id="settings-dropdown" class="settings-dropdown">
+                <button id="install-menu-button" class="dropdown-item">Install App</button>
+                <button id="export-menu-button" class="dropdown-item">Export Data</button>
+                <button id="reset-packed-button" class="dropdown-item">Reset Packed</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

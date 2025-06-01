@@ -1,0 +1,222 @@
+/* Main styles for the travel packing app */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #6a0dad; /* Purple theme */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #6a0dad; /* Purple theme */
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"][list] {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0 20px 0;
+}
+
+input[type="text"][list]:focus {
+    border-color: #6a0dad;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 13, 173, 0.2);
+}
+
+button {
+    background-color: #6a0dad; /* Purple theme */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a0a9d; /* Darker purple on hover */
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-row input[type="text"] {
+    flex: 1;
+    min-width: 0;
+    padding: 0.5rem;
+}
+
+.filter-packed {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo{
+    width:25%
+}
+
+.filter-select {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 150px;
+}
+
+.settings-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.settings-cog {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    color: black; /* Add this line to make the cog icon black */
+}
+
+.settings-cog:hover {
+    background-color: #e0e0e0;
+}
+
+.settings-dropdown {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    min-width: 150px;
+}
+
+.settings-dropdown.show {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    color: black; /* Add this line to make the dropdown text black */
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    color: #6a0dad;
+    transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+    background-color: rgba(255, 68, 68, 0.1);
+}
+
+.delete-button svg {
+    vertical-align: middle;
+}
+
+/* Center align the Actions column */
+table td:last-child {
+    text-align: center;
+}
+
+/* Datalist styling */
+datalist {
+    background-color: white;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+option {
+    background-color: white !important;
+    color: black !important;
+    padding: 8px !important;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: black !important;
+}
+
+/* Firefox specific styles */
+select option {
+    background-color: white !important;
+    color: black !important;
+}

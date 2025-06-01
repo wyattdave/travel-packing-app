@@ -1,0 +1,41 @@
+{
+  "name": "Travel Packing List",
+  "short_name": "Travel List",
+  "description": "A progressive web app for recording items needed for travel",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#6a0dad",
+  "theme_color": "#6a0dad",
+  "icons": [
+    {
+      "src": "../icon 128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../icon 144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../icon 256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../icon 384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../icon 512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

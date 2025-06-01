@@ -1,0 +1,56 @@
+/* 
+This file contains additional theme styles that can be applied to the application, allowing for easy customization of the look and feel.
+*/
+
+body {
+    background-color: #e0e0e0; /* Light background for contrast */
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th, .table td {
+    border: 1px solid #9c27b0; /* Purple border */
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #9c27b0; /* Purple header */
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f3e5f5; /* Light purple for even rows */
+}
+
+.table tr:hover {
+    background-color: #d1c4e9; /* Darker purple on hover */
+}
+
+.input-field {
+    border: 1px solid #9c27b0; /* Purple border for input fields */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #9c27b0; /* Purple button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #7b1fa2; /* Darker purple on button hover */
+}
+
+.dropdown {
+    border: 1px solid #9c27b0; /* Purple border for dropdowns */
+    border-radius: 5px;
+    padding: 10px;
+}

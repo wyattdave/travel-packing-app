@@ -1,0 +1,22 @@
+{
+  "name": "travel-packing-app",
+  "version": "1.0.0",
+  "description": "A progressive web app for recording items needed for travel.",
+  "main": "src/js/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'No build step required'",
+    "test": "echo 'No tests specified' && exit 0"
+  },
+  "keywords": [
+    "travel",
+    "packing",
+    "pwa"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
