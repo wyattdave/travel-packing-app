@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function addItemToTable(item, category, who, packed) {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${item}</td>
-            <td>${category}</td>
-            <td>${who}</td>
+            <td style="width:100%">${item}</td>
+            <td class="hide-mobile">${category}</td>
+            <td class="hide-mobile">${who}</td>
             <td><input type="checkbox" ${packed ? 'checked' : ''}></td>
             <td>
                 <button class="delete-button" aria-label="Delete item">
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show both install buttons
         const installButton = document.getElementById('install-button');
         const installMenuButton = document.getElementById('install-menu-button');
-        installButton.style.display = 'block';
+        //installButton.style.display = 'block';
         installMenuButton.style.display = 'block';
     });
 

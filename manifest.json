@@ -2,7 +2,7 @@
   "name": "Travel Packing List",
   "short_name": "Travel List",
   "description": "A progressive web app for recording items needed for travel",
-  "start_url": "/",
+  "start_url": "/travel-packing-app/",
   "display": "standalone",
   "background_color": "#6a0dad",
   "theme_color": "#6a0dad",
