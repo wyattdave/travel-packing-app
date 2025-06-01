@@ -10,24 +10,6 @@ The Travel Packing App is a progressive web application designed to help users k
 - **Local Storage**: All data is stored in local storage, with options to export and import the packing list across devices.
 - **Theming**: The app features a purple theme and uses a custom icon for branding.
 
-## File Structure
-```
-travel-packing-app
-├── src
-│   ├── css
-│   │   ├── style.css
-│   │   └── themes.css
-│   ├── js
-│   │   ├── app.js
-│   │   ├── storage.js
-│   │   └── filters.js
-│   ├── index.html
-│   └── manifest.json
-├── package.json
-├── service-worker.js
-└── README.md
-```
-
 ## Installation
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
