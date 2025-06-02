@@ -19,19 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const who = whoInput.value;
 
         if (item && category && who) {
-            addItemToTable(item, category, who, false); // Default to unpacked
-            saveItemToLocalStorage(item, category, who, false);
+            addItemToTable(false,item, category, who); // Default to unpacked
+            saveItemToLocalStorage(false, item, category, who);
             clearInputs();
         }
     });
 
-    function addItemToTable(item, category, who, packed) {
+    function addItemToTable(packed,item, category, who) {
         const row = document.createElement('tr');
         row.innerHTML = `
+            <td><input type="checkbox" ${packed ? 'checked' : ''}></td>
             <td style="width:100%">${item}</td>
             <td class="hide-mobile">${category}</td>
             <td class="hide-mobile">${who}</td>
-            <td><input type="checkbox" ${packed ? 'checked' : ''}></td>
+            
             <td>
                 <button class="delete-button" aria-label="Delete item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -99,8 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadItems() {
         const items = getItemsFromLocalStorage();
         itemList.innerHTML = ''; // Clear existing items
-        items.forEach(({ item, category, who, packed }) => {
-            addItemToTable(item, category, who, packed);
+        items.forEach(({ packed,item, category, who }) => {
+            addItemToTable(packed,item, category, who);
         });
         updateDatalistOptions(); // Update the datalists when loading items
         updateFilterOptions(); // Update the filter options
@@ -200,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const itemList = document.getElementById('item-list');
         itemList.innerHTML = '';
         filteredItems.forEach(item => {
-            addItemToTable(item.item, item.category, item.who, item.packed);
+            addItemToTable(item.packed,item.item, item.category, item.who);
         });
     }
 

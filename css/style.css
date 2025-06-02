@@ -70,7 +70,7 @@ h1, h2, h3 {
 }
 
 input[type="text"], select {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin: 5px 0 20px 0;
     border: 1px solid #ccc;
@@ -82,7 +82,7 @@ input[type="text"][list] {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 10px;
-    width: 100%;
+    width: 95%;
     margin: 5px 0 20px 0;
 }
 
@@ -91,6 +91,8 @@ input[type="text"][list]:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(106, 13, 173, 0.2);
 }
+
+
 
 button {
     background-color: #6a0dad; /* Purple theme */
